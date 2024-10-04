@@ -1,4 +1,4 @@
-package com.SP.proDec.user.service;
+package com.SP.proDec.user.service.impl;
 
 import com.SP.proDec.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

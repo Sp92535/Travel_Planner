@@ -1,7 +1,7 @@
 package com.SP.proDec.user.config;
 
 import com.SP.proDec.user.filters.JWTFilter;
-import com.SP.proDec.user.service.UserDetailsServiceImpl;
+import com.SP.proDec.user.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

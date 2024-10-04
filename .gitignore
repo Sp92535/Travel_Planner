@@ -40,7 +40,7 @@ Thumbs.db
 # Spring Boot application properties (if you store sensitive info here)
 # Uncomment if you keep sensitive data in these files
 # /src/main/resources/application.properties
-# /src/main/resources/application.yml
+ /backend/proDec/src/main/resources/application.yml
 
 # Exclude Docker-specific files if needed
 #/docker-compose.override.yml

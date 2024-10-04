@@ -1,7 +1,7 @@
 package com.SP.proDec.user.filters;
 
-import com.SP.proDec.user.service.UserDetailsServiceImpl;
 import com.SP.proDec.user.service.JWTService;
+import com.SP.proDec.user.service.impl.UserDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

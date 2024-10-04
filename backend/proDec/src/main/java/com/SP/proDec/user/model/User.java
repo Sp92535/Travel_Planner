@@ -27,6 +27,10 @@ public class User implements UserDetails {
     @Getter(AccessLevel.NONE)
     private String password;
 
+    @Column(columnDefinition = "BOOLEAN DEFAULT FALSE")
+    @Getter(AccessLevel.NONE)
+    private boolean enabled;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singleton(new SimpleGrantedAuthority("USER")); // Implement as needed
@@ -59,6 +63,6 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return this.enabled;
     }
 }
