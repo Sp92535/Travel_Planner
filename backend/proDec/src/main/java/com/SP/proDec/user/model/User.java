@@ -20,6 +20,11 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(nullable = false)
+    private String firstName;
+
+    private String lastName;
+
     @Column(unique = true, nullable = false)
     private String email;
 

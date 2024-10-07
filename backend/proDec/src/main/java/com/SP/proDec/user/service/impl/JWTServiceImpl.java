@@ -16,7 +16,7 @@ import java.util.function.Function;
 @Service
 public class JWTServiceImpl implements JWTService {
 
-    private static final long EXPIRY_PERIOD = 1000*60*60*24;
+    private static final long EXPIRY_PERIOD = 1000*60;
     private static final String SECRET_KEY = "STAR_PLATINUM_THE_WORLD_ORA_ORA_ORA_ORA_ORA_ORA_ORA_ORA_ORA";
 
 
