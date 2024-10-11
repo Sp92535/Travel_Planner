@@ -1,0 +1,53 @@
+# Maven target directory
+/target/
+
+# Maven Wrapper files
+.mvn/
+mvnw
+mvnw.cmd
+
+# Logs
+/logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# IntelliJ IDEA project files
+/.idea/
+/*.iml
+
+# Eclipse project files
+/.classpath
+/.project
+/.settings/
+
+# VS Code settings
+/.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build-related files
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot application properties (if you store sensitive info here)
+# Uncomment if you keep sensitive data in these files
+# /src/main/resources/application.properties
+# /backend/proDec/src/main/resources/application.yml
+#**/application.yml
+# Exclude Docker-specific files if needed
+#/docker-compose.override.yml
+#.docker/
+
+# Node modules (for frontend if managed here)
+/node_modules/
+
+/frontend/node_modules/
+**/.env

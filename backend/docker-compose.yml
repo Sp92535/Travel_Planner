@@ -1,0 +1,50 @@
+services:
+
+  postgres:
+    container_name: travel_postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: travel-admin
+      POSTGRES_PASSWORD: roadroller
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5433:5432"
+    networks:
+      - travelNetwork
+    restart: unless-stopped
+
+  pgadmin:
+    container_name: travel_pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: sp92535@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: roadroller
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - "5050:80"
+    networks:
+      - travelNetwork
+    restart: unless-stopped
+
+  redis:
+    image: redis:latest
+    container_name: travel_redis_container
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: always
+
+
+networks:
+  travelNetwork:
+    driver: bridge
+
+volumes:
+  postgres:
+  pgadmin:
+  redis-data:
